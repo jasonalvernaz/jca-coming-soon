@@ -6,6 +6,7 @@ import { Description } from "./Description";
 import { Links } from "./Links";
 import Countdown from "./Countdown";
 import Subscribe from "./Subscribe";
+import Contact from "./Contact";
 import logo from "../images/logo.svg";
 import xmark from "../images/x-mark.svg";
 import exclamation from "../images/exclamation.svg";
@@ -129,7 +130,6 @@ class ComingSoon extends Component {
           alt={logo.alt}
           src={logo.src}
           spinSpeed={logo.spinSpeed}
-          toggleLogoSpeed={this.toggleLogoSpeed}
         />
         <Title text={title.text} />
         <Description
@@ -140,12 +140,9 @@ class ComingSoon extends Component {
           visible={notification.visible}
           level={notification.level}
         />
-        <Subscribe
+        <Contact
           placeholder={subscribe.placeholder}
           buttonText={subscribe.buttonText}
-          changeLogoSpeed={this.changeLogoSpeed}
-          configureNotification={this.configureNotification}
-          showNotification={this.showNotification}
         />
         <Links links={links} />
       </div>
