@@ -5,7 +5,6 @@ import { Title } from "./Title";
 import { Description } from "./Description";
 import { Links } from "./Links";
 import Countdown from "./Countdown";
-import Subscribe from "./Subscribe";
 import Contact from "./Contact";
 import logo from "../images/logo.svg";
 import xmark from "../images/x-mark.svg";
@@ -33,8 +32,11 @@ class ComingSoon extends Component {
     description: {
       text: "The Coding From Null course platform will be up and running shortly. Please subscribe to our newsletter below to receive updates when new course material is available."
     },
-    subscribe: {
-      placeholder: "Enter Email Address",
+    contact: {
+      firstPlaceholder: "First Name",
+      lastPlaceholder: "Last Name",
+      emailPlaceholder: "Enter Email Address",
+      messagePlaceholder: "Please tell me about your project here.",
       buttonText: "Submit"
     },
     links: [
@@ -117,7 +119,7 @@ class ComingSoon extends Component {
       title,
       description,
       logo,
-      subscribe,
+      contact,
       links,
       countdown,
       notification
@@ -141,8 +143,11 @@ class ComingSoon extends Component {
           level={notification.level}
         />
         <Contact
-          placeholder={subscribe.placeholder}
-          buttonText={subscribe.buttonText}
+          firstPlaceholder={contact.firstPlaceholder}
+          lastPlaceholder={contact.lastPlaceholder}
+          emailPlaceholder={contact.emailPlaceholder}
+          messagePlaceholder={contact.messagePlaceholder}
+          buttonText={contact.buttonText}
         />
         <Links links={links} />
       </div>
@@ -161,8 +166,11 @@ ComingSoon.propTypes = {
   description: PropTypes.shape({
     text: PropTypes.string
   }),
-  subscribe: PropTypes.shape({
-    placeholder: PropTypes.string,
+  contact: PropTypes.shape({
+    firstPlaceholder: PropTypes.string,
+    lastPlaceholder: PropTypes.string,
+    emailPlaceholder: PropTypes.string,
+    messagePlaceholder: PropTypes.string,
     buttonText: PropTypes.string
   }),
   links: PropTypes.arrayOf(
@@ -185,8 +193,11 @@ ComingSoon.defaultProps = {
   description: {
     text: ""
   },
-  subscribe: {
-    placeholder: "",
+  contact: {
+    firstPlaceholder: "",
+    lastPlaceholder: "",
+    emailPlaceholder: "",
+    messagePlaceholder: "",
     buttonText: ""
   },
   links: [
