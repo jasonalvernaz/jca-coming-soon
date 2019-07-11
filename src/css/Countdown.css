@@ -1,4 +1,5 @@
 .countdown {
+  background-image: url(../images/texture.svg);
   background-color: #4c2a85;
   padding: 20px;
   grid-area: countdown;
