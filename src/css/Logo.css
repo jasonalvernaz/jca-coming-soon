@@ -1,8 +1,13 @@
 .logo-container {
   grid-area: logo;
+  transition: all 0.7s ease-in;
 }
 
 .logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.logo-container .grow {
+  transform: scale(1.1) rotate(5deg);
 }
