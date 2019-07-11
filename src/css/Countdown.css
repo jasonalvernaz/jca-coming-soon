@@ -5,9 +5,9 @@
   grid-area: countdown;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 75px);
-  grid-gap: 40px;
-  justify-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, minmax(75px, 150px));
+  grid-gap: 20px;
   justify-content: center;
 }
 
