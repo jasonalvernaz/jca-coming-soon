@@ -4,7 +4,7 @@
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 100px auto 50px auto auto auto;
   grid-template-areas:
-    "sidebar-left   countdown     sidebar-right"
+    "countdown      countdown     countdown"
     "sidebar-left   logo          sidebar-right"
     "sidebar-left   title         sidebar-right"
     "sidebar-left   description   sidebar-right"
