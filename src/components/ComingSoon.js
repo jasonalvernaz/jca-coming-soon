@@ -26,11 +26,11 @@ class ComingSoon extends Component {
       src: logo
     },
     title: {
-      text: "Coming Soon!"
+      text: "Jason Cory Alvernaz"
     },
     description: {
       text:
-        "The Coding From Null course platform will be up and running shortly. Please subscribe to our newsletter below to receive updates when new course material is available."
+        "My portfolio site will be up and running shortly. In the meantime, please fill out the contact form below to get started bringing your project to life. Whatever the needs are for your next website, I can help you craft a beautifully designed site to show to the world."
     },
     contact: {
       namePlaceholder: "Name",
