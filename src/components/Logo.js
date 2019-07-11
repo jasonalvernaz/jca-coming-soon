@@ -1,15 +1,10 @@
 import React from "react";
 import "../css/Logo.css";
 
-export const Logo = ({
-  alt,
-  src,
-  spinSpeed
-}) => {
+export const Logo = ({ alt, src }) => {
   return (
-    <div className={`logo-container ${spinSpeed}`}>
+    <div className="logo-container">
       <img className="logo" alt={alt} src={src} />
     </div>
   );
 };
-

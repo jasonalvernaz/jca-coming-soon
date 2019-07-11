@@ -6,7 +6,7 @@ import { Description } from "./Description";
 import { Links } from "./Links";
 import Countdown from "./Countdown";
 import Contact from "./Contact";
-import logo from "../images/logo.svg";
+import logo from "../images/JasonCoryCircle.png";
 import xmark from "../images/x-mark.svg";
 import exclamation from "../images/exclamation.svg";
 import check from "../images/check-mark.svg";
@@ -22,9 +22,8 @@ class ComingSoon extends Component {
       futureDate: "2019-08-31 00:00:00"
     },
     logo: {
-      alt: "Spinning Gear",
-      src: logo,
-      spinSpeed: "slow"
+      alt: "Jason Cory Alvernaz",
+      src: logo
     },
     title: {
       text: "Coming Soon!"
@@ -129,7 +128,7 @@ class ComingSoon extends Component {
     return (
       <div className="background">
         <Countdown futureDate={countdown.futureDate} />
-        <Logo alt={logo.alt} src={logo.src} spinSpeed={logo.spinSpeed} />
+        <Logo alt={logo.alt} src={logo.src} />
         <Title text={title.text} />
         <Description
           text={description.text}
