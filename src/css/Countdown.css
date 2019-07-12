@@ -7,8 +7,9 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(4, minmax(75px, 150px));
-  grid-gap: 20px;
+  grid-gap: 10px;
   justify-content: center;
+  border-bottom: 2px solid black;
 }
 
 .countdown-segment {
@@ -26,10 +27,4 @@
 
 .countdown-segment-caption {
   font-size: 14px;
-}
-
-@media (max-width: 500px) {
-  .countdown {
-    grid-gap: 10px;
-  }
 }

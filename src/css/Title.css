@@ -11,24 +11,12 @@
 .title h1 {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  /* display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-gap: 20px; */
   border-bottom: 2px solid var(--primary-color);
   align-items: center;
 }
 
-/* .title h1:before,
-.title h1:after {
-  display: block;
-  content: "";
-  height: 10px;
+@media (max-width: 700px) {
+  .title {
+    padding: 10px;
+  }
 }
-
-.title h1:before {
-  background: linear-gradient(to left, var(--primary-color), transparent);
-}
-
-.title h1:after {
-  background: linear-gradient(to right, var(--primary-color), transparent);
-} */

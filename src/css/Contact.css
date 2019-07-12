@@ -17,8 +17,8 @@
   border-radius: 4px;
   height: 40px;
   background-color: var(--secondary-text-color);
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  color: black;
   padding-left: 10px;
   outline: none;
   font-size: 16px;
@@ -35,6 +35,26 @@
   resize: vertical;
 }
 
+.contact-button {
+  height: 40px;
+  background-image: url(../images/texture.svg);
+  background-color: var(--primary-color);
+  border: 0;
+  color: var(--text-color);
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact-button:hover {
+  filter: brightness(85%);
+}
+
 @media (max-width: 500px) {
   .contact > * {
     grid-column: 1 / -1;
@@ -46,70 +66,3 @@
     padding: 10px;
   }
 }
-
-.subscribe {
-  grid-area: subscribe;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: [input] 4fr [button] 1fr;
-  align-items: center;
-}
-
-.subscribe-email {
-  grid-area: input;
-  border-radius: 4px;
-  height: 40px;
-  background-color: var(--secondary-text-color);
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
-  padding-left: 10px;
-  outline: none;
-  font-size: 16px;
-  transition: all 0.2s ease-in;
-}
-
-.subscribe-email::placeholder {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.subscribe-email:focus,
-:hover {
-  border-color: var(--primary-color);
-}
-
-.contact-button {
-  height: 40px;
-  background-image: url(../images/texture.svg);
-  background-color: var(--primary-color);
-  border: 0;
-  color: var(--text-color);
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bolder;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-}
-
-.contact-button:hover {
-  filter: brightness(85%);
-}
-
-.subscribe-button:focus {
-  outline: none;
-}
-
-/* @media (max-width: 700px) {
-  .subscribe {
-    grid-template-areas:
-      "input"
-      "button";
-  }
-  .subscribe-button,
-  .subscribe-email {
-    width: 250px;
-    grid-column: 1 / -1;
-  }
-} */
