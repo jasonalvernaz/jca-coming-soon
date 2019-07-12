@@ -16,7 +16,7 @@
 .contact textarea {
   border-radius: 4px;
   height: 40px;
-  background-color: var(--secondary-text-color);
+  background-color: var(--text-color);
   border: 1px solid var(--primary-color);
   color: black;
   padding-left: 10px;
@@ -42,7 +42,7 @@
   background-color: var(--primary-color);
   border: 0;
   color: var(--text-color);
-  border: 1px solid var(--secondary-text-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
   font-size: 16px;
