@@ -24,7 +24,8 @@ class ComingSoon extends Component {
     },
     bio: {
       title: "My Bio",
-      text: "This is my bio!!"
+      text:
+        "This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!"
     },
     logo: {
       alt: "Jason Cory Alvernaz",
