@@ -30,7 +30,7 @@ class ComingSoon extends Component {
     },
     description: {
       text:
-        "My portfolio site will be up and running shortly. In the meantime, please fill out the contact form below to get started bringing your project to life. Whatever the needs are for your next website, I can help you craft a beautifully designed site to show to the world."
+        "My portfolio site will be up and running shortly. In the meantime, please fill out the contact form below to get started bringing your project to life. Whatever the needs are for your next website, I can help you craft a beautifully designed site to show off your product or service to the world."
     },
     contact: {
       namePlaceholder: "Name",
