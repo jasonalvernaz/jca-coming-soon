@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
+  background-image: url(../images/dust_scratches.png);
   min-height: calc(100vh - 100px);
   margin: 0;
   background-attachment: fixed;
