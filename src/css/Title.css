@@ -10,6 +10,7 @@
 }
 
 .title h1 {
+  color: var(--secondary-color);
   width: fit-content;
   display: grid;
   justify-items: center;

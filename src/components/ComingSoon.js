@@ -10,7 +10,7 @@ import logo from "../images/JasonCoryCircle.png";
 import xmark from "../images/x-mark.svg";
 import exclamation from "../images/exclamation.svg";
 import check from "../images/check-mark.svg";
-import facebook from "../images/fbookiconNeon.svg";
+import facebook from "../images/fbookiconTextured.svg";
 import instagram from "../images/instaiconNeon.svg";
 import youtube from "../images/youtubeiconNeon.svg";
 import twitter from "../images/twittericonNeon.svg";
