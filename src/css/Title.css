@@ -5,14 +5,24 @@
   max-width: 700px;
   grid-template-columns: 1;
   grid-template-rows: 1;
+  justify-content: center;
   align-content: center;
 }
 
 .title h1 {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  border-bottom: 2px solid var(--primary-color);
-  align-items: center;
+  width: fit-content;
+  display: grid;
+  justify-items: center;
+}
+
+.title h1:after {
+  display: block;
+  width: 150%;
+  content: "";
+  transform: rotate(-1deg);
+  height: 10px;
+  background: var(--primary-color);
+  box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 700px) {
