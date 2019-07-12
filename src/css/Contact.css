@@ -18,7 +18,7 @@
   height: 40px;
   background-color: var(--text-color);
   border: 1px solid var(--primary-color);
-  color: black;
+  color: var(--secondary-color);
   padding-left: 10px;
   outline: none;
   font-size: 16px;
@@ -43,13 +43,14 @@
   border: 0;
   color: var(--text-color);
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  max-width: 150px;
   font-size: 16px;
   font-weight: bolder;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact-button:hover {
@@ -59,6 +60,9 @@
 @media (max-width: 500px) {
   .contact > * {
     grid-column: 1 / -1;
+  }
+  .contact-button {
+    max-width: 100%;
   }
 }
 

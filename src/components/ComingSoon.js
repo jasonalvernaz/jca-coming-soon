@@ -37,7 +37,7 @@ class ComingSoon extends Component {
       emailPlaceholder: "Email Address",
       subjectPlaceholder: "Subject",
       messagePlaceholder: "Please tell me about your project here.",
-      buttonText: "Submit"
+      buttonText: "Send Email"
     },
     links: [
       {

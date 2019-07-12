@@ -11,7 +11,7 @@ class Contact extends Component {
 
   handleChange = e => {
     const value = e.target.value;
-    if (e.target.name !== "message") {
+    if (e.target.name === "email") {
       this.setState({ [e.target.name]: value.trim() });
     } else {
       this.setState({ [e.target.name]: value });
