@@ -29,14 +29,15 @@
   height: 40px;
 }
 
+.contact textarea {
+  height: 80px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
 .contact-subject,
 .contact-message {
   grid-column: 1 / -1;
-}
-
-.contact-message {
-  padding-top: 10px;
-  resize: vertical;
 }
 
 .contact-button {
