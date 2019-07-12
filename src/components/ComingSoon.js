@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import { Title } from "./Title";
 import { Description } from "./Description";
 import { Links } from "./Links";
+import { Bio } from "./Bio";
 import Countdown from "./Countdown";
 import Contact from "./Contact";
 import logo from "../images/JasonCoryCircle.png";
@@ -20,6 +21,10 @@ class ComingSoon extends Component {
   state = {
     countdown: {
       futureDate: "2019-08-31 00:00:00"
+    },
+    bio: {
+      title: "My Bio",
+      text: "This is my bio!!"
     },
     logo: {
       alt: "Jason Cory Alvernaz",
@@ -116,18 +121,20 @@ class ComingSoon extends Component {
 
   render() {
     const {
+      countdown,
+      bio,
+      logo,
       title,
       description,
-      logo,
       contact,
       links,
-      countdown,
       notification
     } = this.state;
 
     return (
       <div className="background">
         <Countdown futureDate={countdown.futureDate} />
+        <Bio title={bio.title} text={bio.text} />
         <Logo alt={logo.alt} src={logo.src} />
         <Title text={title.text} />
         <Description
@@ -152,6 +159,10 @@ class ComingSoon extends Component {
 }
 
 ComingSoon.propTypes = {
+  bio: PropTypes.shape({
+    title: PropTypes.string,
+    text: PropTypes.string
+  }),
   logo: PropTypes.shape({
     src: PropTypes.string,
     alt: PropTypes.string
@@ -179,6 +190,10 @@ ComingSoon.propTypes = {
 };
 
 ComingSoon.defaultProps = {
+  bio: {
+    title: "",
+    text: ""
+  },
   logo: {
     alt: "",
     src: ""

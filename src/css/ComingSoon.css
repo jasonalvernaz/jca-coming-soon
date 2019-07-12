@@ -5,11 +5,11 @@
   grid-template-rows: 100px auto 50px auto auto auto;
   grid-template-areas:
     "countdown      countdown     countdown"
-    "sidebar-left   logo          sidebar-right"
-    "sidebar-left   title         sidebar-right"
-    "sidebar-left   description   sidebar-right"
-    "sidebar-left   contact       sidebar-right"
-    "sidebar-left   social        sidebar-right";
+    "bio            logo          sidebar-right"
+    "bio            title         sidebar-right"
+    "bio            description   sidebar-right"
+    "bio            contact       sidebar-right"
+    "bio            social        sidebar-right";
   justify-items: center;
   align-items: center;
   color: var(--text-color);
@@ -26,7 +26,7 @@
       "description"
       "contact"
       "social"
-      "sidebar-left"
+      "bio"
       "sidebar-right";
   }
 }
