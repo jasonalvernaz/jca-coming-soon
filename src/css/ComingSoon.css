@@ -2,31 +2,29 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto 1fr auto;
-  grid-template-rows: 100px auto 50px auto auto auto;
+  grid-template-rows: 100px auto 50px auto auto;
   grid-template-areas:
     "countdown      countdown     countdown"
-    "bio            logo          sidebar-right"
-    "bio            title         sidebar-right"
-    "bio            description   sidebar-right"
-    "bio            contact       sidebar-right"
-    "bio            social        sidebar-right";
+    "bio            logo          social"
+    "bio            title         social"
+    "bio            description   social"
+    "bio            contact       social";
   justify-items: center;
   align-items: center;
   color: var(--text-color);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .background {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto 50px auto auto auto auto auto;
+    grid-template-rows: 100px auto 50px auto auto auto auto;
     grid-template-areas:
       "countdown"
       "logo"
       "title"
       "description"
       "contact"
-      "social"
       "bio"
-      "sidebar-right";
+      "social";
   }
 }

@@ -20,7 +20,7 @@
   <defs
      id="defs2">
      <filter id="shadow">
-      <feDropShadow dx="-1" dy="1" stdDeviation=".7" />
+      <feDropShadow dx="-1" dy="1" stdDeviation="0" flood-color="rgba(0, 0, 0, 0.2)"/>
      </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
