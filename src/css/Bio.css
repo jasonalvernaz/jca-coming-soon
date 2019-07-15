@@ -4,25 +4,43 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-gap: 10px;
-  width: 250px;
+  width: 300px;
   align-self: start;
   border-radius: 4px;
   border: 1px solid var(--primary-color);
-  margin: 50px 10px 10px 10px;
+  background-color: var(--text-color);
+  margin: 70px 10px 10px 10px;
+  overflow: hidden;
 }
 
 .bio-title {
   background-color: #4ecdc4;
-  height: 100%;
+  display: grid;
+  justify-items: center;
   margin: 0;
-  padding: 10px;
+  padding: 40px;
+  background-image: url(../images/circuit-board.svg);
+  transform: skewY(1deg);
+  border-bottom: var(--primary-color) solid 1px;
+  transform-origin: top right;
+}
+
+.bio h2:after {
+  display: block;
+  width: 50%;
+  content: "";
+  transform: rotate(-1deg);
+  height: 10px;
+  background: var(--primary-color);
+  box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .bio-text {
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  padding: 10px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .bio {
     width: 700px;
   }
