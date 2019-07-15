@@ -11,10 +11,10 @@ import logo from "../images/JasonCoryCircle.png";
 import xmark from "../images/x-mark.svg";
 import exclamation from "../images/exclamation.svg";
 import check from "../images/check-mark.svg";
-import facebook from "../images/fbookiconTextured.svg";
-import instagram from "../images/instaiconNeon.svg";
-import youtube from "../images/youtubeiconNeon.svg";
-import twitter from "../images/twittericonNeon.svg";
+import facebook from "../images/fbookiconPlain.svg";
+import instagram from "../images/instaiconPlain.svg";
+import youtube from "../images/youtubeiconPlain.svg";
+import twitter from "../images/twittericonPlain.svg";
 import "../css/ComingSoon.css";
 
 class ComingSoon extends Component {
@@ -49,7 +49,7 @@ class ComingSoon extends Component {
       {
         url: "https://www.facebook.com/JasonAlvernaz",
         logo: facebook,
-        text: "Join"
+        text: "Friend"
       },
       {
         url: "https://www.instagram.com/jason.cory.code/",
