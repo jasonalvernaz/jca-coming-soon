@@ -21,7 +21,7 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    fetch("/sendEmail")
+    fetch("/.netlify/functions/sendEmail")
       .then(message => {
         return message.json();
       })
