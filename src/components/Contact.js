@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import "../css/Contact.css";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class Contact extends Component {
   state = {
     name: "",
@@ -25,7 +31,7 @@ class Contact extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: JSON.stringify({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state })
     })
       .then(message => {
         return message.json();
