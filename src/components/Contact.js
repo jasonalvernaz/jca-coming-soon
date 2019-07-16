@@ -20,6 +20,17 @@ class Contact extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+
+    fetch("/sendEmail")
+      .then(message => {
+        return message.json();
+      })
+      .then(json => {
+        console.log(json);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   render() {
