@@ -8,8 +8,6 @@ import { Bio } from "./Bio";
 import Countdown from "./Countdown";
 import Contact from "./Contact";
 import logo from "../images/JasonCoryCircle.png";
-import xmark from "../images/x-mark.svg";
-import exclamation from "../images/exclamation.svg";
 import check from "../images/check-mark.svg";
 import facebook from "../images/fbookiconPlain.svg";
 import instagram from "../images/instaiconPlain.svg";
@@ -68,34 +66,12 @@ class ComingSoon extends Component {
       }
     ],
     notification: {
-      src: "",
-      alt: "",
-      message: "",
-      visible: false,
-      level: ""
+      src: check,
+      alt: "Check Mark",
+      message:
+        "Your email has been sent. I will reach out soon and we can start crafting your new site.",
+      visible: false
     }
-  };
-
-  configureNotification = level => {
-    const notification = { ...this.state.notification };
-    notification.level = level;
-    if (level === "success") {
-      notification.src = check;
-      notification.alt = "Check Mark";
-      notification.message = `Thank you for subscribing to our mailing list.
-                        You will be receiving a welcome email shortly.`;
-    } else if (level === "warning") {
-      notification.src = exclamation;
-      notification.alt = "Exclamation Point";
-      notification.message = `The email you entered is already on our mailing list.
-                        Thank you for joining the community.`;
-    } else {
-      notification.src = xmark;
-      notification.alt = "X Mark";
-      notification.message = `There was an issue with your email submission.
-                        Please check your email and try again.`;
-    }
-    this.setState({ notification });
   };
 
   showNotification = () => {
@@ -106,17 +82,6 @@ class ComingSoon extends Component {
         notification.visible = false;
         this.setState({ notification });
       }, 3000);
-    });
-  };
-
-  changeLogoSpeed = () => {
-    const logo = { ...this.state.logo };
-    logo.spinSpeed = "fast";
-    this.setState({ logo }, () => {
-      setTimeout(() => {
-        logo.spinSpeed = "slow";
-        this.setState({ logo });
-      }, 1000);
     });
   };
 
@@ -144,7 +109,6 @@ class ComingSoon extends Component {
           alt={notification.alt}
           message={notification.message}
           visible={notification.visible}
-          level={notification.level}
         />
         <Contact
           namePlaceholder={contact.namePlaceholder}
@@ -152,6 +116,7 @@ class ComingSoon extends Component {
           subjectPlaceholder={contact.subjectPlaceholder}
           messagePlaceholder={contact.messagePlaceholder}
           buttonText={contact.buttonText}
+          showNotification={this.showNotification}
         />
         <Links links={links} />
       </div>

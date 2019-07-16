@@ -31,9 +31,11 @@ class Contact extends Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
-    }).catch(err => {
-      console.log(err);
-    });
+    })
+      .then(() => this.props.showNotification())
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   render() {
