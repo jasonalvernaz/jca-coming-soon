@@ -8,7 +8,7 @@ import { Bio } from "./Bio";
 import Countdown from "./Countdown";
 import Contact from "./Contact";
 import logo from "../images/JasonCoryCircle.png";
-import check from "../images/check-mark.svg";
+import check from "../images/check-mark2.svg";
 import facebook from "../images/fbookiconPlain.svg";
 import instagram from "../images/instaiconPlain.svg";
 import youtube from "../images/youtubeiconPlain.svg";
@@ -69,7 +69,7 @@ class ComingSoon extends Component {
       src: check,
       alt: "Check Mark",
       message:
-        "Your email has been sent. I will reach out soon and we can start crafting your new site.",
+        "Thank you for reaching out. I will be in contact as soon as possible to discuss the exciting future for your business.",
       visible: false
     }
   };
@@ -81,7 +81,7 @@ class ComingSoon extends Component {
       setTimeout(() => {
         notification.visible = false;
         this.setState({ notification });
-      }, 3000);
+      }, 4000);
     });
   };
 

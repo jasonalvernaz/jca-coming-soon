@@ -2,9 +2,7 @@
   --primary-color: #4c2a85;
   --text-color: #ffffff;
   --secondary-color: #000013;
-  --warning-color: #fa8334;
-  --danger-color: #ff312e;
-  --success-color: #4c2a85;
+  --green: #4ecdc4;
 }
 
 @font-face {

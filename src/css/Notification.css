@@ -4,10 +4,14 @@
   grid-gap: 10px;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  grid-template-columns: 1fr 5fr;
-  border: 1px solid var(--secondary-text-color);
+  grid-template-columns: 1fr;
+  border: 1px solid var(--primary-color);
+  background-image: url(../images/circuit-board.svg);
+  background-color: var(--green);
   position: relative;
-  transition: 0.35s;
+  justify-self: center;
+  width: 100%;
+  transition: 0.5s;
   transform: translateY(100%);
 }
 
@@ -15,31 +19,21 @@
   transform: translateY(0);
 }
 
-.notification.success {
-  background-color: var(--success-color);
-}
-
-.notification.warning {
-  background-color: var(--warning-color);
-}
-
-.notification.danger {
-  background-color: var(--danger-color);
-}
-
 .notification img {
   justify-self: center;
   align-self: center;
-  width: 40px;
+  width: 60px;
 }
 
 .notification p {
   color: var(--secondary-text-color);
-  font-weight: 500;
+  font-weight: 700;
   align-self: center;
-  padding-right: 10px;
+  padding: 10px;
 }
 
-.notification:hover {
-  border-color: var(--secondary-text-color);
+@media (max-width: 700px) {
+  .notification {
+    width: calc(100vw - 40px);
+  }
 }
