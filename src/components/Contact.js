@@ -6,7 +6,8 @@ class Contact extends Component {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
+    response: ""
   };
 
   handleChange = e => {
@@ -21,11 +22,16 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    fetch("/.netlify/functions/sendEmail")
+    fetch("/.netlify/functions/submission-created", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: JSON.stringify({ "form-name": "contact", ...this.state })
+    })
       .then(message => {
         return message.json();
       })
       .then(json => {
+        this.setState({ response: json.msg });
         console.log(json);
       })
       .catch(err => {
@@ -43,7 +49,13 @@ class Contact extends Component {
     } = this.props;
 
     return (
-      <form className="contact" onSubmit={this.handleSubmit}>
+      <form
+        className="contact"
+        onSubmit={this.handleSubmit}
+        name="contact"
+        method="post"
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <input
           className="contact-name"
           name="name"
