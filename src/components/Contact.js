@@ -34,6 +34,7 @@ class Contact extends Component {
       body: encode({ "form-name": "contact", ...this.state })
     })
       .then(message => {
+        console.log(message);
         return message.json();
       })
       .then(json => {
