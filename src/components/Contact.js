@@ -12,8 +12,7 @@ class Contact extends Component {
     name: "",
     email: "",
     subject: "",
-    message: "",
-    response: ""
+    message: ""
   };
 
   handleChange = e => {
@@ -32,18 +31,9 @@ class Contact extends Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(message => {
-        console.log(message);
-        return message.json();
-      })
-      .then(json => {
-        this.setState({ response: json.msg });
-        console.log(json);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    }).catch(err => {
+      console.log(err);
+    });
   };
 
   render() {
