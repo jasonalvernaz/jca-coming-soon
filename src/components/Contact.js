@@ -28,7 +28,7 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    fetch("/.netlify/functions/submission-created", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
