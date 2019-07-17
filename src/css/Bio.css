@@ -6,6 +6,7 @@
   grid-gap: 10px;
   width: 300px;
   align-self: start;
+  justify-self: center;
   border-radius: 4px;
   border: 1px solid var(--primary-color);
   background-color: var(--text-color);
@@ -26,7 +27,6 @@
 }
 
 .bio h2:after {
-  display: block;
   width: 50%;
   content: "";
   transform: rotate(-1deg);

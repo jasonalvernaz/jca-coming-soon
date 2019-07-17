@@ -3,11 +3,10 @@
   background-color: #4c2a85;
   padding: 20px;
   grid-area: countdown;
-  grid-column: 1 / -1;
   width: 100%;
   display: grid;
-  grid-auto-flow: column;
   grid-template-columns: repeat(4, minmax(50px, 150px));
+  grid-template-rows: 1fr;
   grid-gap: 10px;
   justify-content: center;
   border-bottom: 1px solid var(--secondary-color);
@@ -27,11 +26,14 @@
 }
 
 .countdown-segment-caption {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (max-width: 700px) {
   .countdown {
     grid-gap: 0;
+  }
+  .countdown-segment-number {
+    font-size: 8vmin;
   }
 }
