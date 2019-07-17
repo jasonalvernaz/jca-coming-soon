@@ -27,6 +27,8 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
