@@ -29,6 +29,12 @@ class Contact extends Component {
 
     window.scrollTo({ top: 0, behavior: "smooth" });
 
+    const logo = document.querySelector(".logo");
+    logo.classList.add("grow");
+    setTimeout(() => {
+      logo.classList.remove("grow");
+    }, 3000);
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
