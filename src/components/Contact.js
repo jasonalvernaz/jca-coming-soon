@@ -15,6 +15,15 @@ class Contact extends Component {
     message: ""
   };
 
+  clearInputs = () => {
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
+  };
+
   handleChange = e => {
     const value = e.target.value;
     if (e.target.name === "email") {
@@ -44,6 +53,8 @@ class Contact extends Component {
       .catch(err => {
         console.log(err);
       });
+
+    this.clearInputs();
   };
 
   render() {
