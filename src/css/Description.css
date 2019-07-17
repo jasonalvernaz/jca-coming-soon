@@ -11,8 +11,7 @@
 .description-text {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  font-size: 16px;
-  font-weight: 500;
+  /* font-weight: 500; */
   width: 100%;
   color: var(--secondary-color);
 }
