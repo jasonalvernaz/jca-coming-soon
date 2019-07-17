@@ -15,8 +15,7 @@
 }
 
 .title h1:after {
-  display: block;
-  width: 150%;
+  width: 110%;
   content: "";
   transform: rotate(-1deg);
   height: 10px;
@@ -32,7 +31,7 @@
 }
 
 @media (max-width: 500px) {
-  .title h1:after {
-    width: 100%;
+  .title {
+    font-size: 0.75em;
   }
 }

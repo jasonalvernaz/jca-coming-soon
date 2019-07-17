@@ -5,11 +5,12 @@
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   grid-template-columns: 1fr;
-  border: 1px solid var(--primary-color);
-  background-image: url(../images/circuit-board.svg);
-  background-color: var(--green);
+  border: 1px solid var(--secondary-color);
+  background-image: url(../images/texture.svg);
+  background-color: var(--primary-color);
   position: relative;
   justify-self: center;
+  align-items: center;
   width: 100%;
   transition: 0.5s;
   transform: translateY(100%);
@@ -19,17 +20,19 @@
   transform: translateY(0);
 }
 
-.notification img {
-  justify-self: center;
-  align-self: center;
-  width: 60px;
+.notification p {
+  font-weight: 500;
+  padding: 10px;
+  display: grid;
 }
 
-.notification p {
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  align-self: center;
-  padding: 10px;
+.notification p:after {
+  width: 100%;
+  content: "";
+  transform: rotate(-1deg);
+  height: 5px;
+  background: var(--green);
+  box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 700px) {
