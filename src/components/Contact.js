@@ -36,7 +36,7 @@ class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    window.scrollTo({ top: 15, behavior: "smooth" });
+    window.scrollTo({ top: 20, behavior: "smooth" });
 
     const logo = document.querySelector(".logo");
     logo.classList.add("grow");
