@@ -27,6 +27,7 @@
 }
 
 .bio h2:after {
+  margin-top: 5px;
   width: 50%;
   content: "";
   transform: rotate(-1deg);

@@ -7,7 +7,7 @@
   grid-template-columns: 1fr;
   border: 1px solid var(--secondary-color);
   background-image: url(../images/texture.svg);
-  background-color: var(--primary-color);
+  background-color: #5386e4;
   position: relative;
   justify-self: center;
   align-items: center;
@@ -21,15 +21,16 @@
 }
 
 .notification p {
+  font-weight: 500;
   padding: 15px;
   display: grid;
+  justify-items: center;
 }
 
 .notification p:after {
   margin-top: 10px;
-  width: 100%;
+  width: 80%;
   content: "";
-  transform: rotate(-1deg);
   height: 5px;
   background: var(--green);
   box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.2);

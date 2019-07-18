@@ -69,7 +69,7 @@ class ComingSoon extends Component {
       src: check,
       alt: "Check Mark",
       message:
-        "Thank you for reaching out! I will be in contact as soon as possible to discuss the exciting future for you and your business.",
+        "Thanks reaching out! I will be in contact as soon as possible to discuss the exciting future for you and your business.",
       visible: false
     }
   };
