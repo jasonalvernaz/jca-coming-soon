@@ -9,6 +9,7 @@ import Countdown from "./Countdown";
 import Contact from "./Contact";
 import logo from "../images/JasonCoryCircle.png";
 import check from "../images/check-mark2.svg";
+import phone from "../images/cellPhone.svg";
 import linkedin from "../images/linkediniconPlain.svg";
 import instagram from "../images/instaiconPlain.svg";
 import youtube from "../images/youtubeiconPlain.svg";
@@ -21,9 +22,18 @@ class ComingSoon extends Component {
       futureDate: "2019-10-17 00:00:00"
     },
     bio: {
-      title: "My Bio",
-      text:
-        "This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!This is my bio!!"
+      title: "About Me",
+      text: `I am a web developer based out of Reno, NV with a passion for building stunning sites for my clients.
+        As a graduate from the University of Nevada, Reno with Bachelor's Degrees in both Business Management and Information Systems,
+        I understand the technical and business needs for the websites I create and the businesses for which I work. My goal is to craft
+        a site that is not only visually appealing but solves issues with your business processes and drives customers to your company.
+        In order to build something that will compliment your brand, I must know the ins-and-outs of your business
+        the way that you know your business. This is why I take the time to ask the questions and get the feedback that is necessary for
+        me to create something that expresses your brand and its value proposition to your customers. So, reach out and let's build something beautiful together!`,
+      src: phone,
+      alt: "Cell Phone",
+      phoneNumber: "775-997-5429",
+      displayNumber: "775.997.5429"
     },
     logo: {
       alt: "Jason Cory Alvernaz",
@@ -34,7 +44,7 @@ class ComingSoon extends Component {
     },
     description: {
       text:
-        "My portfolio site will be up and running shortly. In the meantime, please fill out the contact form below to get started bringing your project to life. Whatever the needs are for your next website, I can help you craft a beautifully designed site to show off your product or service to the world."
+        "My portfolio site will be up and running shortly. In the meantime, please fill out the contact form below to get started bringing your project to life. Whatever the needs are for your next website, I can craft you a customized and elegantly designed site to show off your product or service to the world."
     },
     contact: {
       namePlaceholder: "Name",
@@ -100,7 +110,14 @@ class ComingSoon extends Component {
     return (
       <div className="background">
         <Countdown futureDate={countdown.futureDate} />
-        <Bio title={bio.title} text={bio.text} />
+        <Bio
+          title={bio.title}
+          text={bio.text}
+          src={bio.src}
+          alt={bio.alt}
+          phoneNumber={bio.phoneNumber}
+          displayNumber={bio.displayNumber}
+        />
         <Logo alt={logo.alt} src={logo.src} />
         <Title text={title.text} />
         <Description
