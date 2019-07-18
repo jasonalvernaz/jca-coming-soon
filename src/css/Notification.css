@@ -13,11 +13,11 @@
   align-items: center;
   width: 100%;
   transition: 0.5s;
-  transform: translateY(100%);
+  transform: translateY(0);
 }
 
-.notification.visible {
-  transform: translateY(0);
+.notification[hidden] {
+  transform: translateY(100%);
 }
 
 .notification p {

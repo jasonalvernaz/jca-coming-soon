@@ -81,7 +81,7 @@ class ComingSoon extends Component {
       setTimeout(() => {
         notification.visible = false;
         this.setState({ notification });
-      }, 4000);
+      }, 5000);
     });
   };
 
