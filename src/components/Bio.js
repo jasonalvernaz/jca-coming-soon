@@ -7,7 +7,7 @@ export const Bio = ({ title, text, src, alt, phoneNumber, displayNumber }) => {
       <h2 className="bio-title">{title}</h2>
       <p className="bio-text">{text}</p>
       <img className="bio-image" src={src} alt={alt} />
-      <a className="bio-phone" href={phoneNumber}>
+      <a className="bio-phone" href={`tel:${phoneNumber}`}>
         {displayNumber}
       </a>
     </div>
