@@ -23,12 +23,12 @@ class ComingSoon extends Component {
     },
     bio: {
       title: "About Me",
-      text: `I am a web developer based out of Reno, NV with a passion for building stunning sites for my clients.
+      text: `I am a web developer based out of Reno, NV, with a passion for building stunning sites for my clients.
         As a graduate from the University of Nevada, Reno with Bachelor's Degrees in both Business Management and Information Systems,
         I understand the technical and business needs for the websites I create and the businesses for which I work. My goal is to craft
         a site that is not only visually appealing but solves issues with your business processes and drives customers to your company.
         In order to build something that will compliment your brand, I must know the ins-and-outs of your business
-        the way that you know your business. This is why I take the time to ask the questions and get the feedback that is necessary for
+        the way that you know your business. This concept is why I take the time to ask the questions and get the feedback that is necessary for
         me to create something that expresses your brand and its value proposition to your customers. So, reach out and let's build something beautiful together!`,
       src: phone,
       alt: "Cell Phone",
@@ -79,7 +79,7 @@ class ComingSoon extends Component {
       src: check,
       alt: "Check Mark",
       message:
-        "Thanks reaching out! I will be in contact as soon as possible to discuss the exciting future for you and your business.",
+        "Thanks for reaching out! I will be in contact as soon as possible to discuss the exciting future for you and your business.",
       visible: false
     }
   };
