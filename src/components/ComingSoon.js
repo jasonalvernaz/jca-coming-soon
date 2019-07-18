@@ -9,7 +9,7 @@ import Countdown from "./Countdown";
 import Contact from "./Contact";
 import logo from "../images/JasonCoryCircle.png";
 import check from "../images/check-mark2.svg";
-import facebook from "../images/fbookiconPlain.svg";
+import linkedin from "../images/linkediniconPlain.svg";
 import instagram from "../images/instaiconPlain.svg";
 import youtube from "../images/youtubeiconPlain.svg";
 import twitter from "../images/twittericonPlain.svg";
@@ -45,9 +45,9 @@ class ComingSoon extends Component {
     },
     links: [
       {
-        url: "https://www.facebook.com/JasonAlvernaz",
-        logo: facebook,
-        text: "Friend"
+        url: "https://www.linkedin.com/in/JasonAlvernaz",
+        logo: linkedin,
+        text: "Connect"
       },
       {
         url: "https://www.instagram.com/jason.cory.code/",
