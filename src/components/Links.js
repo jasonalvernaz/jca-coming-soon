@@ -13,13 +13,7 @@ export const Links = ({ links }) => {
             rel="noopener noreferrer"
             href={link.url}
           >
-            <object
-              className="social-logo"
-              type="image/svg+xml"
-              data={link.logo}
-            >
-              {link.text}
-            </object>
+            <img className="social-logo" src={link.logo} alt={link.text} />
             <span className="social-text">{link.text}</span>
           </a>
         );
