@@ -18,7 +18,7 @@ import "../css/ComingSoon.css";
 class ComingSoon extends Component {
   state = {
     countdown: {
-      futureDate: "2019-08-31 00:00:00"
+      futureDate: "2019-10-17 00:00:00"
     },
     bio: {
       title: "My Bio",
