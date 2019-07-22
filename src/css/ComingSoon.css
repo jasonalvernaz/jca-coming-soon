@@ -2,13 +2,14 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 100px auto 50px auto auto;
+  grid-template-rows: 100px auto 50px auto auto auto;
   grid-template-areas:
     "countdown      countdown     countdown"
     "bio            logo          social"
     "bio            title         social"
     "bio            description   social"
-    "bio            contact       social";
+    "bio            contact       social"
+    "footer" "footer" "footer";
   justify-items: center;
   align-items: center;
   color: var(--text-color);
@@ -17,7 +18,7 @@
 @media (max-width: 1300px) {
   .background {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto 50px auto auto auto auto;
+    grid-template-rows: 100px auto 50px auto auto auto auto auto;
     grid-template-areas:
       "countdown"
       "logo"
@@ -25,6 +26,7 @@
       "description"
       "contact"
       "bio"
-      "social";
+      "social"
+      "footer";
   }
 }

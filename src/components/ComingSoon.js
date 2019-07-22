@@ -14,7 +14,10 @@ import linkedin from "../images/linkediniconPlain.svg";
 import instagram from "../images/instaiconPlain.svg";
 import youtube from "../images/youtubeiconPlain.svg";
 import twitter from "../images/twittericonPlain.svg";
+import heart from "../images/heart.svg";
+import reno from "../images/oldReno.svg";
 import "../css/ComingSoon.css";
+import { Footer } from "./Footer";
 
 class ComingSoon extends Component {
   state = {
@@ -81,6 +84,12 @@ class ComingSoon extends Component {
       message:
         "Thanks for reaching out! I will be in contact as soon as possible to discuss the exciting future for you and your business.",
       visible: false
+    },
+    footer: {
+      heartImage: heart,
+      heartText: "Red Heart",
+      cityImage: reno,
+      cityText: "Reno"
     }
   };
 
@@ -104,7 +113,8 @@ class ComingSoon extends Component {
       description,
       contact,
       links,
-      notification
+      notification,
+      footer
     } = this.state;
 
     return (
@@ -136,6 +146,12 @@ class ComingSoon extends Component {
           showNotification={this.showNotification}
         />
         <Links links={links} />
+        <Footer
+          heartImage={footer.heartImage}
+          heartText={footer.heartText}
+          cityImage={footer.cityImage}
+          cityText={footer.cityText}
+        />
       </div>
     );
   }
