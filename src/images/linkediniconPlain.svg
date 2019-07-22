@@ -17,10 +17,10 @@
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="linkediniconPlain.svg">
   <defs id="defs2">
-   <filter id="shadow">
+   <filter id="shadow" filterRes="30">
       <feDropShadow dx="-1" dy="1" stdDeviation="0" flood-color="rgba(0, 0, 0, 0.2)"/>
    </filter>
-   <filter id="text-shadow">
+   <filter id="text-shadow" filterRes="30">
       <feDropShadow dx="-4" dy="4" stdDeviation="0" flood-color="rgba(0, 0, 0, 0.2)"/>
    </filter>
   </defs>
