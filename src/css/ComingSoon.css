@@ -9,7 +9,7 @@
     "bio            title         social"
     "bio            description   social"
     "bio            contact       social"
-    "footer" "footer" "footer";
+    "footer         footer        footer";
   justify-items: center;
   align-items: center;
   color: var(--text-color);
