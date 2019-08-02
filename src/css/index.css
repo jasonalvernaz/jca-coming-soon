@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #4c2a85;
-  --text-color: #ffffff;
-  --secondary-color: #000013;
+  --purple: #4c2a85;
+  --white: #fffffa;
+  --black: #000013;
   --green: #4ecdc4;
+  --blue: #5386e4;
 }
 
 @font-face {

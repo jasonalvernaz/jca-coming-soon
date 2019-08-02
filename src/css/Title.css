@@ -8,7 +8,7 @@
 }
 
 .title h1 {
-  color: var(--secondary-color);
+  color: var(--black);
   width: fit-content;
   display: grid;
   justify-items: center;
@@ -19,7 +19,7 @@
   content: "";
   transform: rotate(-1deg);
   height: 10px;
-  background: var(--primary-color);
+  background: var(--purple);
   box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }

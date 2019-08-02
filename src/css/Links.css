@@ -13,7 +13,7 @@
 }
 
 .social-link {
-  color: var(--primary-color);
+  color: var(--purple);
   font-weight: 500;
   display: grid;
   grid-gap: 10px;

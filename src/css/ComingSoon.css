@@ -12,7 +12,7 @@
     "footer         footer        footer";
   justify-items: center;
   align-items: center;
-  color: var(--text-color);
+  color: var(--white);
 }
 
 @media (max-width: 1300px) {
