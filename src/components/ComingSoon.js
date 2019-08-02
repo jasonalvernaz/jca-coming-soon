@@ -158,6 +158,9 @@ class ComingSoon extends Component {
 }
 
 ComingSoon.propTypes = {
+  countdown: PropTypes.shape({
+    futureDate: PropTypes.instanceOf(Date)
+  }),
   bio: PropTypes.shape({
     title: PropTypes.string,
     text: PropTypes.string
@@ -185,10 +188,25 @@ ComingSoon.propTypes = {
       logo: PropTypes.string,
       text: PropTypes.string
     })
-  )
+  ),
+  notification: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    message: PropTypes.string,
+    visible: PropTypes.bool
+  }),
+  footer: PropTypes.shape({
+    heartImage: PropTypes.string,
+    heartText: PropTypes.string,
+    cityImage: PropTypes.string,
+    cityText: PropTypes.string
+  })
 };
 
 ComingSoon.defaultProps = {
+  countdown: {
+    futureDate: new Date()
+  },
   bio: {
     title: "",
     text: ""
@@ -216,7 +234,19 @@ ComingSoon.defaultProps = {
       logo: "",
       text: ""
     }
-  ]
+  ],
+  notification: {
+    src: "",
+    alt: "",
+    message: "",
+    visible: false
+  },
+  footer: {
+    heartImage: "",
+    heartText: "",
+    cityImage: "",
+    cityText: ""
+  }
 };
 
 export default ComingSoon;
