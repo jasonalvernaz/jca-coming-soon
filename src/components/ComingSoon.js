@@ -22,7 +22,7 @@ import { Footer } from "./Footer";
 class ComingSoon extends Component {
   state = {
     countdown: {
-      futureDate: "2019-10-17 00:00:00"
+      futureDate: "2019-9-19 00:00:00"
     },
     bio: {
       title: "About Me",
