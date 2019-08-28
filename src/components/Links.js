@@ -13,7 +13,9 @@ export const Links = ({ links }) => {
             rel="noopener noreferrer"
             href={link.url}
           >
-            <img className="social-logo" src={link.logo} alt={link.text} />
+            <svg className="social-logo" viewBox="0 0 300 300">
+              <use href={link.logo + "#icon"} />
+            </svg>
             <span className="social-text">{link.text}</span>
           </a>
         );
